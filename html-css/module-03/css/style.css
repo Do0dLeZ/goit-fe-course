@@ -17,12 +17,14 @@
 
 .header-nav-list {
   text-align: center;
+  font-size: 0;
 }
 
 .header-nav-list-item {
   list-style: none;
   display: inline-block;
   margin-right: 70px;
+  font-size: 16px;
 }
 
 .header-nav-list-item:last-child {
@@ -32,10 +34,15 @@
 .header-nav-item-link {
   text-decoration: none;
   color: #626262;
+  display: block;
+}
+
+.header-nav-item-link:hover {
+  color: #9addfb;
 }
 
 .articles-section {
-    margin: 0 0 70px 0;
+    padding: 0 0 70px 0;
 }
 
 .articles-list {
@@ -54,9 +61,6 @@
   margin: 0 60px 0 0;
 }
 
-.article-item:last-child {
-  margin: 0 0 50px 0;
-}
 
 .article-item-img {
   width: 420px;
@@ -85,4 +89,9 @@
   padding: 20px;
   border: 1px solid #626262;
   cursor: pointer;
+}
+
+.load-more-button:hover {
+  color: #9addfb;
+  border-color: #9addfb;
 }
