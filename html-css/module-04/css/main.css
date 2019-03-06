@@ -20,15 +20,16 @@
   float: left;
   font-family: "Roboto", serif, sans-serif;
   font-size: 30px;
+  font-weight: lighter;
+}
+
+.text-logo::first-letter {
+  color: #1abc9c;
 }
 
 .navigation {
   float: right;
   margin-top: 10px;
-}
-
-.text-logo::first-letter {
-  color: #1abc9c;
 }
 
 .nav-list-item {

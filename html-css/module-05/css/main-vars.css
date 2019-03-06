@@ -1,0 +1,9 @@
+:root {
+  --main-font: "Roboto", sans-serif, serif;
+  --main-font-menu: "Open Sans", sans-serif, serif;
+  --main-hover-and-frst-lttr: #1abc9c;
+  --slide-arrows-opacity: 0.65;
+  --slide-arrows-margin: 245px;
+  --products-title-color: #515151;
+  --products-backgrnd-color: #e9f0fd;
+}
