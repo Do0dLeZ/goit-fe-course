@@ -5,8 +5,9 @@
 }
 
 .wrapper {
-  width: 1170px;
+  width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .page-header {
@@ -16,6 +17,7 @@
 
 .text-logo {
   text-decoration: none;
+  display: block;
   color: black;
   float: left;
   font-family: "Roboto", serif, sans-serif;
@@ -48,15 +50,16 @@
   color: black;
   font-family: "Open Sans", serif, sans-serif;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .nav-link:hover {
   color: #1abc9c;
 }
 
-.container {
-  margin: 0 0 83px 0;
-  font-size: 0px;
+.main {
+  padding-bottom: 83px;
+  width: 1140px;
 }
 
 .section-featured-products {
@@ -75,7 +78,8 @@
   font-family: "Roboto", serif, sans-serif;
   font-size: 48px;
   color: #515151;
-}
+  margin-bottom: 90px;
+}6
 
 .main-title::after,
 .blog-title::after {
@@ -85,7 +89,6 @@
   display: block;
   width: 160px;
   border-bottom: 6px solid #1abc9c;
-  margin-bottom: 90px;
 }
 
 .products-list-item {
@@ -98,8 +101,8 @@
   margin-bottom: 20px;
 }
 
-.products-list-item:nth-child(4n + 1) {
-  margin-left: 30px;
+.products-list-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
 }
 
 .product-image {
@@ -157,6 +160,7 @@
   font-family: "Open Sans", serif, sans-serif;
   font-size: 18px;
   color: #555252;
+  margin-bottom: 15px;
 }
 
 .blog-item-title::after {
@@ -165,11 +169,9 @@
   width: 135px;
   display: block;
   border-bottom: 3px solid #1abc9c;
-  margin-bottom: 15px;
 }
 
 .blog-item:first-child {
-  margin-left: 30px;
   font-family: "Open Sans", serif, sans-serif;
 }
 
