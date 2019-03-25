@@ -4,6 +4,7 @@ let country = prompt(
 );
 
 let deliveryPrice;
+country = country.trim().toUpperCase();
 
 switch (country) {
   case "Индия":
@@ -26,5 +27,5 @@ switch (country) {
     break;
 }
 
-if (!(deliveryPrice === undefined))
-  alert(`Доставка в ${country} будет стоить ${deliveryPrice}`);
+if (deliveryPrice)
+  console.log(`Доставка в ${country} будет стоить ${deliveryPrice}`);

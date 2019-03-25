@@ -5,11 +5,13 @@ let quantity = prompt("Введите количество дроидов для
 
 const totalPrice = pricePerDroid * quantity;
 
+let message;
+
 if (totalPrice > credits) {
-  alert("Недостаточно средств на счету!");
+  message = "Недостаточно средств на счету!";
 } else {
-  alert(
-    `Вы купили ${quantity} дроидов, на счету осталось ${credits -
-      totalPrice} кредитов.`
-  );
+  message = `Вы купили ${quantity} дроидов, на счету осталось ${credits -
+    totalPrice} кредитов.`;
 }
+
+alert(message);

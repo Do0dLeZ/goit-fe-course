@@ -1,11 +1,14 @@
 "use strict";
 const ADMIN_PASSWORD = "m4ng0h4ckz";
 let callBackForPassword = prompt("Введите пароль администратора!");
+let message;
 
 if (callBackForPassword === null) {
-  alert("Отменено пользователем!");
+  message = "Отменено пользователем!";
 } else if (ADMIN_PASSWORD !== callBackForPassword) {
-  alert("Доступ запрещен, неверный пароль!");
+  message = "Доступ запрещен, неверный пароль!";
 } else {
-  alert("Добро пожаловать!");
+  message = "Добро пожаловать!";
 }
+
+alert(message);
