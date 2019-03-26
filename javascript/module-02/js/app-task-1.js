@@ -8,13 +8,18 @@ while (true) {
 
   if (input === null) break;
 
-  if (isNaN(input)) alert("Вы ввели не число. Попробуйте еще раз.");
-  else {
-    input = Number(input);
-    numbers.push(input);
-    total += input;
+  //isNan fixed to Number.isNaN
+  if (Number.isNaN(input)) {
+    alert("Вы ввели не число. Попробуйте еще раз.");
+  } else {
+    numbers.push(Number(input));
   }
 }
 
-if (numbers.length > 0)
+//As was written in ex. created another loop
+if (numbers.length > 0) {
+  for (const value of numbers) {
+    total += value;
+  }
   console.log(`Массив ${numbers} с общей суммой ${total}`);
+}
