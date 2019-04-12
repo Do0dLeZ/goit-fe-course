@@ -4,21 +4,21 @@ let attemptsLeft = 3;
 const NO_MORE_TRY_MSG = "У вас закончились попытки, аккаунт заблокирован!";
 const WELCOME_MSG = "Добро пожаловать!";
 
-while (attemptsLeft > 0) {
+//Потому что 0 даст false
+while (attemptsLeft) {
   let inputPass = prompt("Введите пароль!");
 
   //Was added condition that user provide or do not provide Cancle...
-  if (inputPass !== null) {
-    if (passwords.includes(inputPass)) {
-      alert(WELCOME_MSG);
-      break;
-    } else {
-      attemptsLeft--;
-      if (attemptsLeft >= 1) {
-        alert(`Неверный пароль, у вас осталось ${attemptsLeft} попыток`);
-      } else {
-        alert(NO_MORE_TRY_MSG);
-      }
-    }
+  if (inputPass === null) break;
+
+  if (passwords.includes(inputPass)) {
+    alert(WELCOME_MSG);
+    break;
+  }
+
+  alert(`Неверный пароль, у вас осталось ${attemptsLeft--} попыток`);
+
+  if (!attemptsLeft) {
+    alert(NO_MORE_TRY_MSG);
   }
 }
