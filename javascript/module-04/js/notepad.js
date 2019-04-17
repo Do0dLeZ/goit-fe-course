@@ -54,7 +54,8 @@ const notepad = {
      * Принимает: идентификатор заметки и объект, полями которого надо обновить заметку
      * Возвращает: обновленную заметку
      */
-    this.findNoteById(id).body = updatedContent;
+
+    return Object.assign(this.findNoteById(id), updatedContent);
   },
   updateNotePriority(id, priority) {
     /*
@@ -63,7 +64,6 @@ const notepad = {
      * Принимает: идентификатор заметки и ее новый приоритет
      * Возвращает: обновленную заметку
      */
-    // console.log(this.findNoteById(id));
     this.findNoteById(id).priority = priority;
   },
   filterNotesByQuery(query) {
@@ -185,7 +185,8 @@ console.log(
  * Обновим контент заметки с id-3
  */
 notepad.updateNoteContent("id-3", {
-  title: "Get comfy with React.js or Vue.js"
+  title: "Get comfy with React.js or Vue.js",
+  content: "new content"
 });
 
 console.log(
