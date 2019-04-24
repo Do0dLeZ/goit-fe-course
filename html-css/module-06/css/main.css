@@ -33,6 +33,7 @@ a {
 
 .text-logo,
 .nav-link {
+  display: block;
   font-family: var(--main-font-family);
   color: var(--main-font-color);
 }
@@ -49,18 +50,24 @@ a {
 .nav-link {
   font-size: 14px;
   font-weight: normal;
+  transition: color 0.5s ease-in-out;
 }
 
 .nav-item:hover .nav-link {
   color: var(--menu-hover-color);
 }
 
-.nav-item:hover::after {
+.nav-item::after {
   content: "";
   display: block;
   position: absolute;
   top: 25px;
+  width: 0;
+  transition: width 0.5s ease-in-out;
   border-bottom: 4px solid var(--menu-hover-color);
+}
+
+.nav-item:hover::after {
   width: 100%;
 }
 
@@ -102,17 +109,45 @@ a {
 .service-item {
   width: 383px;
   height: 150px;
-  margin-bottom: 5px;
   padding-left: 83px;
   flex-grow: 0;
   position: relative;
   text-align: start;
 }
 
-.service-icon {
+.service-icon-alarm::before,
+.service-icon-line-graph::before,
+.service-icon-computer::before,
+.service-icon-book::before,
+.service-icon-home::before,
+.service-icon-digital::before {
   position: absolute;
   top: 5px;
   left: 25px;
+}
+
+.service-icon-alarm::before {
+  content: url("../images/icons/alarm.png");
+}
+
+.service-icon-line-graph::before {
+  content: url("../images/icons/line-graph.png");
+}
+
+.service-icon-computer::before {
+  content: url("../images/icons/computer.png");
+}
+
+.service-icon-book::before {
+  content: url("../images/icons/book.png");
+}
+
+.service-icon-home::before {
+  content: url("../images/icons/home.png");
+}
+
+.service-icon-digital::before {
+  content: url("../images/icons/digital.png");
 }
 
 .service-title {
@@ -198,13 +233,14 @@ a {
   height: 57px;
   display: flex;
   background-color: var(--icon-backgrnd-color);
+  cursor: pointer;
 }
 
 .social-icons-item:hover .icon-wrapper {
   background-color: var(--main-font-color);
 }
 
-.sical-icon-img {
+.social-link {
   margin: auto;
 }
 
@@ -224,7 +260,7 @@ a {
   transform: translate(-10px, -10px);
 }
 
-.team-item:hover .social-icons-list{
+.team-item:hover .social-icons-list {
   opacity: 1;
 }
 
@@ -233,7 +269,6 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  padding-top: 30px;
 }
 
 .team-employer-placement {
@@ -284,5 +319,3 @@ a {
   color: white;
   background-color: var(--main-font-color);
 }
-
-
