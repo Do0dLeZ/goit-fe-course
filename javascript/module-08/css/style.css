@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 25px;
+}
+
+.quiz {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.questions-list {
+  list-style: none;
+}
+
+.question-list-item {
+  border: 2px solid black;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.question-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.question-item-input {
+  margin-right: 15px;
+}
+
+.result-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.result {
+  font-size: 24px;
+}
+
+.accepted {
+  color: green;
+}
+
+.not-accepted {
+  color: red;
+}

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Wisdom Script Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/wisdom-script-cufonfonts-webfont/Wisdom\ Script\ AJ.woff")
+    format("woff");
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v13-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v13-latin-regular.woff") format("woff");
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/montserrat-v13-latin-800.woff2") format("woff2"),
+    url("../fonts/montserrat-v13-latin-800.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Droid Serif Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/droid-serif-2-cufonfonts-webfont/DroidSerif-Italic.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "Droid Serif Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/droid-serif-2-cufonfonts-webfont/DroidSerif-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "Droid Serif Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/droid-serif-2-cufonfonts-webfont/DroidSerif-Bold.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Droid Serif Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/droid-serif-2-cufonfonts-webfont/DroidSerif-BoldItalic.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto-slab-2-cufonfonts-webfont/RobotoSlab-Regular.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto-slab-2-cufonfonts-webfont/RobotoSlab-Thin.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto-slab-2-cufonfonts-webfont/RobotoSlab-LightItalic.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto-slab-2-cufonfonts-webfont/RobotoSlab-Light.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto-slab-2-cufonfonts-webfont/RobotoSlab-Bold.woff")
+    format("woff");
+}

@@ -1,0 +1,9 @@
+:root {
+  --text-logo-color: rgb(254, 209, 54);
+  --main-nav-item-color: rgb(0, 0, 0);
+  --main-nav-item-color-hover: rgb(254, 209, 54);
+  --section-description-color: rgb(119, 119, 119);
+  --services-icon-border-color: rgb(254, 209, 54);
+  --section-item-description-color: rgb(119, 119, 119);
+  --footer-title-color: rgb(255, 255, 255);
+}
