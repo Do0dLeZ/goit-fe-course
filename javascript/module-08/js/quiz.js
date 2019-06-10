@@ -46,10 +46,10 @@ const initAnswers = function(questionCount, choices) {
   // init answer list item
   const answerListElement = document.createElement("ol");
   answerListElement.classList.add("answer-list");
-  let valueCount = 1;
+  let valueCount = 0;
 
   //
-  const defaultAnswer = initRadiBtn(questionCount, 0);
+  const defaultAnswer = initRadiBtn(questionCount, -1);
   defaultAnswer.checked = true;
   defaultAnswer.style.display = "none";
   answerListElement.appendChild(defaultAnswer);
@@ -113,6 +113,7 @@ function handlerSubmit(event) {
 const checkAnswers = answers => {
   let rightAnswersCount = 0;
   quizData.questions.forEach((item, index) => {
+    // console.log(answers[index + 1], item.answer);
     if (Number(answers[index + 1]) === item.answer) rightAnswersCount++;
   });
   return rightAnswersCount;
